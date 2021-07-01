@@ -1,0 +1,227 @@
+\documentclass[10pt,a4paper]{protocol}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=2cm,marginparwidth=0.2cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Bright}{HTML}{58318f}
+\definecolor{Green}{HTML}{319866}
+\definecolor{Black}{HTML}{111111}
+\definecolor{LightGrey}{HTML}{515c50}
+\colorlet{heading}{Green}
+\colorlet{accent}{Bright}
+\colorlet{emphasis}{Black}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \risk if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faSpinner}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Protocolo estandarizado}
+\tagline{Taller de Investigación II}
+\made{October 2 2017}
+\logo{3.5cm}{"Logo"}
+
+
+\docinfo{%
+  % can add more \addedtopeople
+  \madeby{Nombre Apellido1 Apellido 2}{bluealpixels@gmail.com}
+  \addedto{Instituto Tecnológico de León.}{Montadores s/n, Industrial Julian de Obregon, 37290 León, Gto.}
+}
+
+
+\purpose{
+	Resumen de la investigación propuesta
+} % add a short discription of the purpose for this protocol
+
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makeheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \need.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \need title in the "main" bar.
+\need{Introducción}
+{\bf Título:} El título debe caracterizarse, principalmente, por ser corto y claro. Asimismo, tiene que  expresar inequívocamente y de manera interesante aquello de lo que va a tratar la investigación. En la medida de lo posible contendrá palabras o conceptos clave así como la precisión del marco espacio-temporal que comprende \cite{einstein}.\\ \vspace*{0.5cm}
+
+Es importante poner particular cuidado en que las expectativas que genere el título correspondan al contenido u objetivos de la investigación propuesta: no debe generar falsas expectativas que sólo resultarían contraproducentes.\\ \vspace*{0.5cm}
+
+
+El título puede contener un subtítulo, siempre y cuando este último contribuya a lograr los objetivos antes mencionados y no distraiga la atención o haga difuso el título o el objeto de la investigación.\\ \vspace*{0.5cm}
+
+
+Se debe evitar el uso de abreviaciones y/o acrónimos en el título.\\ \vspace*{0.5cm}
+
+\divider
+{\bf Introducción:} La introducción es un elemento muy importante del protocolo de investigación ya que éste será circulado entre los miembros de una academia o jurado, según sea el caso, para evaluar su pertinencia. Esta instancia evaluará la conveniencia de la investigación propuesta, en buena medida, a partir de la introducción. Por lo tanto, la introducción debe concentrar, con fluidez y precisión, de manera discursiva, los principales elementos del problema y de la investigación. Los elementos a considerar son:\\ 
+
+\begin{itemize}
+	\item[$ \bullet $] El tema de investigación
+	\item[$ \bullet $]El objeto de estudio
+	\item[$ \bullet $]Las motivaciones de la investigación
+	\item[$ \bullet $]La relevancia del tema
+	\item[$ \bullet $]El listado de los datos que serán recolectados y/o analizados
+	\item[$ \bullet $]La mención del o los métodos de análisis
+	\item[$ \bullet $]Panorámica general del problema que motiva la investigación
+	\item[$ \bullet $]Los resultados genéricos que se espera obtener
+	\item[$ \bullet $]Los alcances espacio – temporales de la investigación
+\end{itemize}
+
+Los elementos antes listados deben, por lo tanto, ser solamente enunciados, sin abordarlos exhaustivamente. \\ \vspace*{0.5cm}
+
+Por lo tanto, todos los puntos que se aborden en la introducción deben desembocar en la definición de la problemática de investigación. Para ello, la redacción de la introducción debe conducir, sin ruptura y como una transición natural, hacia el Planteamiento del Problema. \\ \vspace*{0.5cm}
+
+%\marginpar{Planteamiento del Problema}
+\need{Planteamiento del Problema}
+El planteamiento o definición correcta del problema es lo primero que se debe de lograr para no desviar el objetivo de la investigación ni generar cuestionamientos irrelevantes. 	El alumno debe ser capaz no sólo de conceptuar el problema sino también de verbalizarlo en forma clara, precisa y accesible. En esta parte se trata de brindar una descripción concreta del problema de estudio, dando una versión de los hechos y fenómenos cuya explicación debe ser interesante y útil, tanto para el alumno como para el medio académico y la sociedad. Con tal fin, partiendo de lo particular y hasta lo general, se explicará el cuestionamiento y la problemática que dirigirá la investigación así como las dificultades y dudas que se pretenden estudiar. \\ \vspace*{0.5cm}
+
+En la medida en que la identificación y el planteamiento del problema se hagan correctamente, el proceso de solución habrá avanzado sustancialmente. Para ello, se incluirán los hechos, relaciones y explicaciones que fundamenten la problemática, mencionando aquellos datos que la puedan soportar, ya sea que se encuentren en otras investigaciones o en teorías ya establecidas, por ejemplo. \\ \vspace*{0.5cm}
+
+Si no se ha hecho ya, en esta parte se debe incluir la definición de los conceptos eje y remitir el resto al glosario de términos y conceptos cuando corresponda. \\ \vspace*{0.5cm}
+
+El planteamiento de la problemática debe dimensionar el problema apoyándose en cuadros de estadísticas, figuras, diagramas, etc. \\ \vspace*{0.5cm}
+
+\need{Antecedentes}
+%\protosubsection{Antecedentes}
+Algunos autores lo llaman también marco teórico, marco de referencia o estado del arte. En este apartado se deberá analizar todo aquello que se ha escrito acerca del objeto de estudio: ¿qué se sabe del tema? ¿qué estudios se han hecho en relación a él? ¿desde qué perspectivas se ha abordado?.\\ \vspace*{0.5cm}
+
+Los antecedentes son la sustentación teórica del problema de investigación u objeto de estudio, sin embargo, se debe ir más allá de la mera descripción y dado que generalmente las teorías representan una escuela, un grupo o un autor, se debe evitar abundar en teorías que sólo planteen un solo aspecto del fenómeno.\\ \vspace*{0.5cm}
+
+La función de los antecedentes es:
+\begin{itemize}
+	\item[$ \bullet $] Delimitar el área de investigación
+	\item[$ \bullet $] Sugerir guías, áreas, nichos o líneas de investigación
+	\item[$ \bullet $] Hacer un compendio de conocimientos existentes en el área que se va a investigar
+	\item[$ \bullet $] Expresar proposiciones teóricas generales, postulados, marcos de referencia
+	\item[$ \bullet $] Ayuda a prevenir errores que se han cometido en otros estudios
+	\item[$ \bullet $] Orienta sobre cómo habrá de llevarse a cabo el estudio
+	\item[$ \bullet $] Amplía el horizonte del estudio y guía al investigador para que este se centre en su problema evitando así posibles desviaciones del planteamiento original
+	\item[$ \bullet $] Provee un marco de referencia para interpretar los resultados del estudio.
+\end{itemize}
+
+Las etapas a realizar para la elaboración del marco teórico son, primero, la revisión crítica de la literatura correspondiente, pertinente y actualizada, y posteriormente, la adopción de una teoría o desarrollo de una perspectiva teórica. \\ \vspace*{0.5cm}
+
+Al final, es importante que el alumno fije, bajo estricta sustentación, una determinada postura ante el fenómeno en cuestión. \\ \vspace*{0.5cm}
+
+\need{Justificación}
+En esta parte se trata de describir brevemente aquellos aspectos del contexto y del debate teórico en que se ubica la investigación y que definen su relevancia y su pertinencia.\\ \vspace*{0.5cm}
+
+La justificación debe convencer al lector principalmente de tres cuestiones: que se abordará una investigación significativa; la importancia y pertinencia del tema,  objeto de estudio y la utilidad de los resultados esperados, todo ello en función de su contribución a la estructura del conocimiento existente y/o de su aplicación práctica y concreta. \\ \vspace*{0.5cm}
+
+La justificación puede redactarse alrededor de las respuestas a los cuestionamientos siguientes: 
+\begin{itemize}
+	\item[$ \bullet $] ¿Por qué y qué tanto es conveniente llevar a cabo esta investigación? O bien ¿Para qué servirá esta investigación?
+	\item[$ \bullet $] ¿Qué aporta de nuevo esta investigación?
+	\item[$ \bullet $] ¿Cuáles son los beneficios que este trabajo proporcionará?
+	\item[$ \bullet $] ¿Quiénes serán los beneficiarios y de qué modo?
+	\item[$ \bullet $] ¿Qué es lo que se prevé cambiar con la investigación?
+	\item[$ \bullet $] ¿Cuál es su utilidad?
+	\item[$ \bullet $] ¿Ayudará a resolver algún problema o gama de problemas prácticos?
+	\item[$ \bullet $] ¿Por qué es significativo este problema de investigación?
+	\item[$ \bullet $] ¿Permitirá llenar algún hueco de conocimiento?
+	\item[$ \bullet $] ¿Se podrán generalizar los resultados a principios más amplios?
+	\item[$ \bullet $] ¿Puede servir para comentar, desarrollar o apoyar una teoría?
+	\item[$ \bullet $] ¿Sugiere como estudiar más adecuadamente una población o fenómeno?
+	\item[$ \bullet $] ¿Ayuda a la definición de un concepto, variable o relación entre variables?
+\end{itemize}
+
+Lo fundamental es que aquí se evidencie la relevancia del tema a investigar, sus implicaciones en el ámbito de estudio y su aporte al avance de la ciencia. Por ello, la justificación claramente formulada, debe sustentar que el problema es significativo, pertinente, factible y viable.
+
+\need{Objetivos}
+El objetivo general surge directamente del problema a estudiar. Es precisamente el “qué” se va a ofrecer al término del estudio, de aquí que define también sus alcances. En el proceso de investigación, es tan importante la función del objetivo, que si se carece de él o su redacción no es clara, no existirá una referencia que indique al alumno si logró lo deseado.\\ \vspace*{0.5cm}
+
+El objetivo general y la pregunta de investigación, que da lugar a la hipótesis, están íntimamente relacionados, por lo tanto deben ser coherentes entre sí. A lo largo del proceso, continuamente se debe revisar la hipótesis y el objetivo general, pues ello ayudará a no perder el rumbo.\\ \vspace*{0.5cm}
+
+Hay diferentes tipos de objetivos de acuerdo al tipo de investigaciones: los hay para investigaciones de diseño, descriptivas, experimentales, investigación-acción, exploratorias, participativas y teóricas.\\ \vspace*{0.5cm}
+
+
+Los objetivos generalmente se redactan como proposición gramatical que contiene:
+\begin{itemize}
+	\item El sujeto, en este caso es el alumno y puede quedar implícito.
+	\item El verbo, que deberá describir en formas precisa una acción y que comúnmente se formula en modo infinitivo.
+	\item El complemento que indica el contexto en que se va a ejecutar la acción.
+\end{itemize}
+
+Para plantearlo, ayudaría responder reflexivamente a la pregunta: ¿cuál es la finalidad del estudio? La respuesta se redactará siempre en infinitivo: definir, evaluar, valorar, etc., De acuerdo al verbo que se utilice se compromete el tipo de estudio que se hará, ya sea cualitativo o cuantitativo. El enunciado debe ser claro y preciso; será mejor en cuanto excluya el mayor número de interpretaciones posibles. Debe evitarse englobar todos los objetivos de la investigación en un solo enunciado.\\ \vspace*{0.5cm}
+
+El objetivo general siempre deriva en acciones teóricas y prácticas. Da lugar a varios objetivos específicos. Cada uno de éstos tiene una manera de realizarse a través de una técnica, que viene a ser el objetivo metodológico.
+
+\step{}{\Large Objetivos específicos}{}
+Señalan las actividades que se deben cumplir para avanzar en la investigación y lo que se pretende lograr en cada una de las etapas de ella, por ende, la suma de los resultados de cada uno de los objetivos específicos integran el resultado de la investigación. Estos se pueden formular fácilmente en términos de preguntas de investigación derivadas del objetivo general. 
+
+\need{Hipótesis}
+Después de definir los objetivos concretos de la investigación y de plantear el problema, es conveniente formular una o varias preguntas al respecto. Estas preguntas de investigación resumirán lo que habrá de ser la investigación  y contribuirán a encuadrar y clarificar el planteamiento del problema al que ésta se va a avocar.\\ \vspace*{0.5cm}
+
+Hay que evitar el hacer preguntas demasiado generales que no conducen a una investigación concreta; para los efectos del protocolo de investigación, se recomienda que las preguntas que se planteen sean tan específicas y precisas como sea posible.\\ \vspace*{0.5cm}
+
+Así, a través de una o varias preguntas, acompañadas de una breve explicación, se pueden establecer los límites temporales (tiempo) y espaciales (lugar) del estudio y esbozar un perfil tentativo de las unidades de observación (personas, viviendas, periódicos, escuelas, barrios, fenómenos, eventos).\\ \vspace*{0.5cm}
+
+
+Naturalmente, durante el desarrollo de la investigación las preguntas originales pueden modificarse e incluso agregarse otras, ya que en esta medida el estudio puede cubrir diversos aspectos del problema a abordar.\\ \vspace*{0.5cm}
+
+
+Los supuestos o conjeturas son las respuestas provisionales que se dan a la, o las, preguntas de investigación y pueden constituirse en hipótesis dentro del método científico. Se trata por lo tanto de enunciados claros y precisos que guiarán la investigación y que serán puestos a prueba. En este sentido, la hipótesis será un enunciado o proposición que tendrá que ser llevada al campo de los hechos para contrastarla con la realidad y demostrar la relación que existe entre el supuesto que se plantea y los sucesos que tiene lugar en el entorno específico para el que fue construida.\\ \vspace*{0.5cm}
+
+
+La hipótesis puede definirse como una explicación anticipada, o una respuesta tentativa que se formula el investigador con respecto al problema que pretende investigar. Una hipótesis puede ser, por lo tanto, una suposición fundamentada en la observación del fenómeno objeto de la investigación y debe conducir racionalmente a la predicción teórica de algunos hechos reales que, posteriormente, deban ser sometidos a prueba. Si la hipótesis está planteada correctamente sus predicciones podrán ser verificables y se podrán establecer conclusiones.\\ \vspace*{0.5cm}
+
+
+Una hipótesis debe contar, por lo menos, con una variable dependiente y otra independiente. La variable independiente es el elemento, fenómeno o situación que explica, condiciona o determina la presencia de otro, en tanto que la dependiente es el fenómeno o situación explicado que está en función de otro. La(s) variable(s) independiente(s) a su vez que es considerada como la causa posible del fenómeno que se estudia, que origina diversos efectos (variables dependientes) relacionados entre sí y que pueden repercutir bajo ciertas circunstancias en las causas.\\ \vspace*{0.5cm}
+
+Las hipótesis que se formulan al momento de elaborar un protocolo son susceptibles de ser modificadas durante el proceso de investigación, en la medida en que se va profundizando en el conocimiento y aprehensión del tema.
+
+
+\need{Metodología}
+La metodología aclara –en forma muy detallada– los pasos y procedimientos utilizados para llevar a cabo la investigación. Así mismo, debe incluir paso a paso la explicación de todos los aspectos necesarios para reproducir o repetir la investigación, aquí debe quedar muy claro el ‘cómo’ de la investigación.\\ \vspace*{0.5cm}
+
+Sin embargo, la forma en que debe trabajarse la metodología varía sustancialmente dependiendo del tipo de documento que se está elaborando. Al desarrollar el protocolo para la investigación, la metodología se constituye en el diseño de la investigación. Por lo tanto, en el protocolo, la metodología se escribe en futuro, como una ‘promesa’ o propuesta de lo que se va a hacer y –sobre todo– cómo se va a hacer. Por otra parte, al escribir la tesis o al publicar los resultados de la investigación, la sección de la metodología debe escribirse en pasado, explicando cómo se llevó a cabo la investigación.\\ \vspace*{0.5cm}
+
+La metodología cumple varias funciones,  primero debe esbozar la forma en que se desarrollará todo el proceso, con el mayor número de detalles posible. Sin embargo, como todo en la planificación,  se puede modificar en algunos aspectos durante la investigación. Si esto sucede, la persona que desarrolla la investigación debe explicar claramente cuáles fueron las modificaciones y las razones de peso que se tomaron en cuenta para variar la metodología. \\ \vspace*{0.5cm}
+
+Como parte de la metodología, a partir del objetivo general de la investigación definido de acuerdo a los lineamientos citados en el apartado correspondiente, se sugiere hacer un ejercicio de reflexión para relacionar los objetivos específicos y metodológicos.\\ \vspace*{0.5cm}
+
+\step{}{Objetivos metodológicos:}{}
+Apunta las herramientas técnicas o recursos prácticos que nos han de llevar a la consecución de los objetivos específicos.
+Es conveniente elaborar un esquema similar al siguiente ejemplo, con el objeto de obtener una panorámica general de las actividades que se deben realizar a lo largo del proceso de investigación:
+
+
+%\clearpage
+
+%\need[otherinfo]{Sources}
+
+%\nocite{*}
+
+\printbibliography
+
+
+\divider
+
+
+%% If the NEXT page doesn't start with a \need but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
